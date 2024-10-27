@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Mosaic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mood Mosaic</h1>
+        <select id="mood-selector" aria-label="Select a mood">
+            <option value="calm">Calm</option>
+            <option value="energetic">Energetic</option>
+            <option value="dreamy">Dreamy</option>
+            <option value="dark">Dark Mode</option>
+        </select>
+    </header>
+    <main class="mosaic">
+        <div class="mosaic-cell"></div>
+        <div class="mosaic-cell"></div>
+        <div class="mosaic-cell"></div>
+        <div class="mosaic-cell"></div>
+        <div class="mosaic-cell"></div>
+        <div class="mosaic-cell"></div>
+        <div class="mosaic-cell"></div>
+        <div class="mosaic-cell"></div>
+        <div class="mosaic-cell"></div>
+        <div class="mosaic-cell"></div>
+        <div class="mosaic-cell"></div>
+        <div class="mosaic-cell"></div>
+        <div class="image-container">
+            <img src="calm.jpeg" alt="Calm Mood" class="mood-image" id="calm-image">
+            <img src="energetic.jpeg" alt="Energetic Mood" class="mood-image" id="energetic-image">
+            <img src="dreamy.jpeg" alt="Dreamy Mood" class="mood-image" id="dreamy-image">
+        </div>
+    </main>
+    <div id="mood-description" style="text-align: center; margin-top: 25px;"></div>
+    <script src="script.js"></script>
+</body>
+</html>

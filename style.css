@@ -1,0 +1,114 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f8ff; /* Light background (Alice Blue) */
+}
+
+header {
+    width: 100%;
+    padding: 30px; /* Increased padding for larger header */
+    text-align: center;
+    background-color: #ffcc00; /* Disney Yellow */
+    color: #333; /* Dark text */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 15em; /* Increased header size */
+}
+
+/* Container for Mosaic and Images */
+.container {
+    display: flex; /* Flexbox for side-by-side layout */
+    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between; /* Space between mosaic and images */
+    width: 100%; /* Full width */
+}
+
+/* Increase size of the mood selector */
+#mood-selector {
+    padding: 20px; /* Increased padding for a larger button */
+    font-size: 1.5em; /* Increased font size */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #007BFF; /* Border color */
+    background-color: #fff; /* Background color */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Add hover effect */
+#mood-selector:hover {
+    border-color: #0056b3; /* Change border color on hover */
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+/* Mosaic Grid Layout */
+.mosaic {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Increased min size */
+    gap: 15px; /* Increased gap between cells */
+    max-width: 700px; /* Increased max width */
+    width: 100%;
+    padding: 20px;
+}
+
+/* Base Mosaic Cell Animation - Smooth Scaling */
+.mosaic-cell {
+    background-color: #ddd;
+    aspect-ratio: 1 / 1;
+    transition: background-color 0.5s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Light text for better contrast */
+    font-size: 2em; /* Increased font size */
+    font-weight: bold;
+}
+
+/* Image Container Styles */
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+    gap: 10px; /* Space between images */
+    width: 50%; /* Take half the width of the container */
+}
+
+/* Image Styles */
+.mood-image {
+    width: 100%; /* Set width to fill the container */
+    height: 100%; /* Fill the height of the container */
+    object-fit: cover; /* Cover the entire area while maintaining aspect ratio */
+    display: none; /* Hide images initially */
+}
+
+/* Mood Description Styles */
+#mood-description {
+    font-size: 2em; /* Increased font size for mood description */
+    color: #333;
+    max-width: 700px; /* Limit width */
+    text-align: center; /* Center text */
+}
+
+/* Reset Button */
+button {
+    padding: 30px 60px; /* Increased padding for larger button */
+    margin-left: 10px;
+    font-size: 10em; /* Increased font size */
+    cursor: pointer;
+}
+
+#reset-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#reset-button:hover {
+    background-color: #0056b3;
+}
